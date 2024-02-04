@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <script src="/scripts/login.js" defer></script>
+    <title>Stickans verktygsbiblotek</title>
+</head>
+<body>
+    <img src="/images/background-big.jpg" alt="backgroundpicture" class="body__img">
+    <section class="body__login-container">
+        <section class="login-container__title">
+            <p class="title__name-over">Stickans</p>
+            <p class="title__name-below">verktygsbiblotek</p>
+        </section>
+        <section class="body__login-credentials">
+            <h2 class="login-credentials__title">Logga in med Mobilt BankID</h2>
+            <label for="login-container__login-credentials" id="login-credentials__label">Personnummer</label>
+            <input type="text" id="login-credentials__social-security-number" oninput="validateInput(this)">
+            <button id="login-credentials__button">Verifiera</button>
+        </section>
+    </section>
+</body>
+</html>
