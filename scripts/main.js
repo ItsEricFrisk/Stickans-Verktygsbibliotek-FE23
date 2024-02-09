@@ -1,4 +1,5 @@
 const productsContainer = document.querySelector(".main__products");
+const shopIcon = document.getElementById("icons__shop");
 
 
 //  Skapa en ny produkt
@@ -40,3 +41,7 @@ createProduct("Tigersåg", "/images/tools/tigersåg.png", "Hyr");
 createProduct("Varmluftspistol", "/images/tools/varmluftspistol.png", "Hyr");
 createProduct("Vinkelslip", "/images/tools/vinkelslip.png", "Hyr");
 createProduct("Batterier", "/images/tools/batteri.png", "hyr");
+
+shopIcon.addEventListener("click", () => {
+    window.location.href = "/pages/shop.html";
+});
